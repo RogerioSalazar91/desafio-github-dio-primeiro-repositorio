@@ -1,0 +1,137 @@
+# Lógica de programação :computer:
+
+Lógica é uma parte da filosofia que trata das formas do pensamento em geral (dedução, indução, hipótese, inferência, etc.) e das operações intelectuais que visam a determinação do que é verdadeiro ou não.
+
+## Técnicas de lógica da programação
+
+### Técnica Linear - Execução Sequenciada(Recursos limitados / Única dimensão)
+
+- Modelo Tradicional 
+- Não tem vínculo
+  - Estrutura Hierárquica
+  - Programação de computadores
+
+### Técnica estruturada
+
+Organização, disposição e ordem dos elementos essenciais que compõem um corpo(**concreto ou abstrato**).
+
+ex: Processamento de dados
+
+objetivo:
+
+- Escrita - Programas
+- Entendimento
+- Validação
+- Manutenção - Facilitar
+
+### Técnica Modular
+
+- Módulo 1
+- Módulo 2
+- Módulo 3 
+- Módulo 4
+
+Partes independentes controladas por um conjunto de regras.
+
+Dados de entrada -> Processo de Transformação -> Dados de Saída
+
+Metas: 
+
+- Simplificação
+- Decompor o problema
+- Verificação do módulo
+
+# Fundamentos de algoritmos
+
+## Variáveis
+
+Qual função do computador? 
+
+​                            Informação
+
+Dados                                                 Instruções
+
+Tratados e processados                     Operações
+
+- Numéricos
+- caracteres
+- lógicos
+
+### Tipos numéricos
+
+- Inteiros - 0, 1, 5, 50, 60, 800 ... -58, -50, -49, 32, -10, -5
+- Reais - 5.95, 9.54, -8.8, -0.555... 
+
+### Tipos Caracteres 
+
+? # A ! "Programação" "PROGRAMAÇÃO" "Fone (21) 981029387"
+
+### Tipo Lógico
+
+Verdadeiro - 1
+
+Falso - 0
+
+Booleano
+
+- Verdadeiro V ou S
+- Falso F ou N
+
+# Estruturas Condicionais e Operadores
+
+Condição: Estado de uma pessoa ou coisa.
+
+Condicional: Que expressa uma condição ou suposição, contém ou implica uma suposição ou hipótese.
+
+​               Inverdade                       Satisfeita
+
+Condição --------------> Excessão --------------> Operação
+
+**Simples**               **Composta**                          **Encadeada**
+
+condição              condição --> Exceção       Condição --> Condição --> Exceção
+
+Operação              Operação                         Operação     Operação
+
+### Operadores Relacionais
+
+= Igual a, <> Diferente de, > Maior que, < Menor que, >= Maior ou igual a, <= Menor ou igual a
+
+### Condicional simples
+
+Se (<condição>) então 
+
+​	<instruções para condição verdadeira> 
+
+Fimse
+
+### Condicional composta
+
+Se (<condição>) então
+
+​	<instruções para condição verdadeira>
+
+Senão
+
+​	<instruções para condição falsa>
+
+Fimse
+
+### Condicional encadeada
+
+Se (<condição>) então
+
+​	<instruções para condição verdadeira>
+
+Senão
+
+​	Se (<condição 2>) então
+
+​		<instruções par: condição 2 verdadeira e 1 falsa>
+
+​	Senão
+
+​		<instruções para condições 1 e 2 falsas>
+
+Fimse
+
