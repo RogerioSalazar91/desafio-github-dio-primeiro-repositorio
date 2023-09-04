@@ -1,3 +1,3 @@
-## Link com comandos de Git: https://comandosgit.github.io
+## Link com comandos de Git: [Página com comandos Git](https://comandosgit.github.io)
 Conteúdos abordando os comandos de Git, desde a instalação até a configuração.
 
