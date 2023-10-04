@@ -1,0 +1,71 @@
+## Formatando textos
+
+- <i> itálico
+- <b> negrito
+- <u> sublinhado
+- <mark> marcação
+- <sup> elevado
+- <sub> abaixo
+- < blockquote > citação
+
+### Tag <font>
+
+**Atributos**:
+
+<font color="red">Texto</font>
+
+<font color="blue" face="Arial, Tahoma">Texto</font>
+
+
+
+## Estruturas de HTML
+
+**Tags** <div> e <span>
+
+<div id="menu-lateral">
+    <div id="links">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+<p>Dio<span>.</span>me</p>
+
+**Tag** <fieldset>
+
+​	<fieldset>
+
+​		<legend>Dados pessoais</legend>
+
+			<div>
+		    <label>Nome:</label><input type="text">
+	        <label>E-mail:</label><input type="text">
+			</div>
+
+​	</fieldset>
+
+**Tag** <embed> *antiga(carrega alguma mídia dentro do site)
+
+< embed src="trailer.mp4" width="300" height="250">
+
+**Tag** <iframe>*pode afetar a segurança(incorpora uma mídia externa ou websites no site)
+
+<iframe src="http://dio.me" width="500" height="400>"
+
+
+
+**Cores**
+
+<a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">Nome das cores</a>
+
+Pode escolher pelos seguintes valores:
+
+- RGB: Combinação de vermelho, verde, azul(Red, Green, Blue)
+- HEX: Combinação de vermelho, verde e azul, mas descrito em hexadecimal
+- HSL: Matiz(HUE), Saturação(Saturation) e Iluminação(Lighten).A matiz tem os valores onde 0 é vermelho, 120 verde e 240 azul
+- RGBA: Mesmo que RGB, porém adicionado canal Alpha(Transparência)
+- HLSA: Mesmo que HSL, porém adicionado canal Alpha(Transparência)
+
+
+

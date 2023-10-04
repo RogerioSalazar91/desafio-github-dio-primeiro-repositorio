@@ -1,0 +1,203 @@
+### **Elementos Bloco**
+
+Os elementos bloco ocupam a largura completa de uma página. Eles sempre iniciam uma nova linha no documento. Por exemplo, um elemento cabeçalho estará numa linha diferente de um elemento parágrafo.
+
+Toda página HTML usa essas três tags:
+
+- A tag <html> é o elemento raiz que define todo o documento HTML.
+- A tag <head> contém metadados sobre o título e a codificação de caracteres da página.
+- A tag <body> inclui todo o conteúdo que aparece na página.
+
+<**html**>
+
+ <**head**>
+
+   <!-- META INFORMAÇÕES --> 
+
+ </**head**>
+
+ <**body**>
+
+   <!-- CONTEÚDO DA PÁGINA -->
+
+ </**body**>
+
+</**html**>
+
+Outras tags de bloco populares são:
+
+- Tags de Cabeçalho – elas variam entre <h1> e <h6>, onde h1 tem um tamanho maior, que vai diminuindo até chegar no h6.
+- Tags de parágrafo – são abertas usando a tag <p>.
+- Tags de lista – possuem diferentes variações. Use a tag <ol> para uma lista ordenada, e a tag <ul> para uma lista sem ordem definida. Então, envolva cada item da lista com a tag <li>.
+
+### **Elementos Em Linha**
+
+Um elemento em linha (ou inline) formatam o conteúdo interno de elementos de bloco. Isso inclui a adição de links ou de linhas com ênfase. Os elementos inline são normalmente usados para formatar texto sem quebrar o fluxo do conteúdo.
+
+Por exemplo, uma tag <strong> faz o elemento ser renderizado em negrito, enquanto a tag <em> faz ele aparecer em itálico. Os hiperlinks também são elementos em linha que usam uma tag <a> e um atributo href para indicar o destino do link:
+
+<a href="https://exemplo.com/">clique aqui</a>
+
+## Tags HTML estruturais
+
+As tags abaixo são utilizadas nos documentos em [HTML5](https://www.homehost.com.br/blog/tutoriais/o-que-e-html/), e têm função estrutural no seu código. Portanto, essas tags têm grande importância na questão semântica da sua página, saber utilizá-las pode adequar o seu código para uma melhor visualização por parte do navegador e do usuário, além de proporcionar uma otimização para os processos de [SEO](https://www.homehost.com.br/blog/seo/seo-marketing-20-dicas-subir-no-google/).
+
+- **<header></header>** – Essas tags definem um cabeçalho. Portanto, todo conteúdo que estiver dentro dela faz parte de um cabeçalho, podendo ser utilizado dentro de outras sessões. Não confundir com as tags <head>;
+- **<main></main>** – Essas tags representam o conteúdo principal do seu corpo, ou seja, o conteúdo relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação;
+- **<footer></footer>** – Essas tags definem um rodapé para a página, geralmente utilizadas no final da página;
+- **<section></section>** – Essas tags definem uma sessão para sua página;
+- **<article></article>** – Essas tags definem um artigo da sua página. Nesse sentido, são utilizadas para separar o conteúdo da sua página. Muito utilizado principalmente por blogs ou páginas de conteúdo;
+- **<aside></aside>** – Essas tags representam uma seção de uma página cujo conteúdo é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo;
+- **<nav></nav>** – Essa tag define um conteúdo de navegação. Portanto, é muito utilizado em conjunto com listas e na criação de menus;
+- **<div></div>** – Define uma divisão da página. Desta forma, funciona como um container para conteúdo de fluxo. Uma vez que não possui um valor semântico, é muito utilizado para organizar melhor o conteúdo. Anteriormente ao HTML5, era utilizado no lugar das categorias acima.
+
+**Trabalhando com formulários**
+
+Campos onde o usuário irá inserir informações que seão enviados para o servidor:
+
+- Tag < form >
+
+  ***Atributos***: 
+
+  - <form name="signup" onsubmit="" target="_blank" autocomplete="on,off" method="POST,GET" action="https//meusite.com.br/signup">
+    </form>
+
+- Tag < input >
+
+  **Atributos**: 
+
+  - <label>Text: </label><input type="text" />
+  - <label>Number: </label><input type="number" min="0" step="5" max="99" />
+  - <label>Button: </label><input type="button" value="enviar" />
+  - <label>Range: </label><input type="range" min="0" max="100" />
+  - <label>Color: </label><input type="color" />
+  - <label>Email </label><input type="email" />
+  - <label>URL: </label><input type="url" />
+  - <label>Date: </label><input type="date" />
+  - <label>Week: </label><input type="week" />
+  - <label>Month: </label><input type="month" />
+  - <label>Checkbox: </label><input type="checkbox" /></label><input type="checkbox" />
+  - <label>Radio: </label><input type="radio" name="aceita"/></label><input type="radio" name="aceita" />
+  - <label>Hidden: </label><input type="hidden" />
+  - <label>File: </label><input type="file" multiple/>
+  - <label>Search: </label><input type="search" />
+
+  
+
+- Tag < checkbox > e < radio >
+
+  **Atributos**:
+
+  <input type="checkbox" name="opcional[]" value="qualquer" >
+
+  <input type="radio" name="borda" value="sim">Sim<br>
+
+  <input type="radio" name="borda" value="não">Não<br>
+
+- Tag < button >
+
+  **Atributos**:
+
+  <button type="button">Clicável</button>
+
+  <button type="reset">Limpar</button>
+
+  <button type="submit">Enviar</button>
+
+  
+
+- Tag < select >
+
+  **Tipos**:
+
+  <select name="role">
+      <option value="">Selecione o cargo</option>
+  	<option value="Administrativo">Administrativo</option>
+      <option value="Diretor">Diretor</option>
+      <option value="TI">TI</option>
+      <option value="Presidente">Presidente</option>
+      <option value="Gerente">Gerente</option>
+  </select>
+  
+  
+
+  <select name="role" multiple>
+      <option value="">Selecione o cargo</option>
+  	<option value="Administrativo">Administrativo</option>
+      <option value="Diretor">Diretor</option>
+      <option value="TI">TI</option>
+      <option value="Presidente">Presidente</option>
+      <option value="Gerente">Gerente</option>
+  </select>
+  
+  
+- Tag < textarea >
+
+**Tipos**:
+<label>Mensagem</label><br>
+
+<textarea name="message">Mensagem</textarea>
+
+**atributos**:
+
+<textarea rows="10" cols="" name="20">Mensagem</textarea>
+
+## Tags de mídia
+
+
+
+- **Tag** <img title="título da imagem" alt="descrição da imagem" src="caminhodaimagem" />  - JPG, GIF, PNG, SVG
+
+  - Atributos: widht - largura, heigth - altura
+
+- **Tag** <audio>
+
+  <audio controls>
+      <source src="Nelly - My Place ft Jahein.mp3" />
+      Seu navegador não tem suporte a aúdio
+  </audio>
+  
+  
+
+  - **Tag** <video> - MP4, WEBM
+
+    <video controls>
+        <source src="caminho do vídeo" />
+        Seu navegador não tem suporte a vídeo
+    </video>
+
+    - **Tag** <track> VTT, SRT
+
+      <video controls>
+          <source src="" />
+          <track src="legenda.vtt" kind="captions" srclang="en" 
+      </video>
+
+      - **Tag** <iframe>
+
+        <iframe src="https://www.youtube.com/watch?v=Vh2I2HabjEM" widht="400" height="300"/>
+
+## Criando tabelas
+
+- **Tag** <table>
+
+  <table summary="Esta tabela se refere as idades da turma A da Dio" border="1" widht="100" cellspacing="" cellpadding="" align="center">
+      <tr>
+          <th title="Nome Completo">Nome</th>
+          <th>Idade</th>
+      </tr>
+      <tr id="1">
+          <td>Rogério</td>
+          <td>32</td>
+      </tr>
+  </table>
+
+- **Tag** <tr> (Table Role - Linhas da tabela)
+
+- **Tags** <td> (Células da tabela) e <th> (Cabeçalho da tabela)
+
+- **Tags** <tbody>(Corpo da tabela), <thead>(Cabeçalho da tabela), <tfoot>(Rodapé da tabela)
+
+- **Tag** <caption>
+
+  <caption>Tabela de idades dos alunos Dio.me</caption>

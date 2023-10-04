@@ -1,0 +1,490 @@
+## Fundamentos CSS
+
+**CSS** - Folha de Estilo em Cascata, é um mecanismo para adicionar estilos a um documento **WEB**(HTML).
+
+- É uma linguagem de estilos;
+- Não é uma linguagem de programação;
+- Não é uma linguagem de marcação;
+
+**Propriedades e valores**
+
+Uma **propriedade** é uma característica de um elemento do nosso HTML (cor de fundo, largura, altura, espaçamento, etc).
+
+Um **valor** define o resultado de uma propriedade e como o navegador deve exibir o estilo daquele elemento.
+
+**ex**:
+
+propriedade: valor;
+
+background: red;
+
+color: white;
+
+## Formas de declarar o CSS
+
+**CSS Inline**: Adicionamos o código CSS utilizando o atributo *style* dentro das tags HTML, elemento por elemento.
+
+**CSS interno**: Código CSS é adicionado dentro de tag <head> da página HTML. Dentro da tag <head> adicionamos outra tag, a <style>, e colocamos as regras CSS nessa área.
+
+**CSS Externo**: É criado um arquivo com a extensão .css com todas as regras CSS que queremos aplicar e esse arquivo é referenciado no HTML da página através da tag <link>.
+
+## Depurando o CSS
+
+O processo de depuração do CSS (*conhecido como debug*), é uma forma de identificar problemas no código-fonte de uma aplicação e entender seu comportamento.
+
+## Seletores CSS
+
+- Seletor por tipo: Busca elemento por uma tag HTML específica.
+- Seletor po ID (#): Busca elementos através do atributo "id".
+- Seletor por classe (.): Busca elementos através do atributo "class".
+- Seletor universal (*): Seleciona todos os elementos HTML.
+- Seletor de atributo ([atrib]): Seleciona elementos que possuem um atributo específico em nosso documento HTML e conseguimos também buscar atributos com um valor específico.
+
+## Agrupamentos de seletores
+
+Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os seletores utilizando uma vírgula (,). Assim não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer um bloco só de CSS e reutilizar as mesmas regras.
+
+## Combinadores 
+
+- Descendente (espaço)
+- Combinador filho (>)
+- Combinador irmão adjacente (+)
+- Combinador irmão em geral (~)
+- [**SELETOR**] [**COMBINADOR**] [**SELETOR**]
+
+## Propriedades de dimensionamento
+
+**widht**(Largura) - max-width e min-widht
+
+**height**(Altura) - min-height e max- height
+
+**Palavras reservadas**
+
+**Initial**, **Auto**, **Inherit** 
+
+## Margin
+
+Espaçamentos externos.
+
+**Um valor**: aplica nos 4 lados
+
+**Dois valores**: em cima e embaixo
+
+**Três valores**: em cima, lados e embaixo
+
+**Quatro valores**: cima, direita, baixo, esquerda
+
+**margin-top** - Margem acima
+
+**margin-left** - Margem à esquerda
+
+**margin- right** - Margem à direita
+
+**margin-bottom** - Margem abaixo
+
+## Padding
+
+Espaçamentos internos.
+
+**padding-top**
+
+**paddinng-right**
+
+**padding-bottom**
+
+**padding-left**
+
+## Box Sizing
+
+**box-sizing**: content-box e border-box
+
+# Estilizações básicas com CSS
+
+## Cores
+
+- Cores pré-definidas: cores como red, yellow, violet, brown...;
+- Palavra-chave "currentcolor": pega a cor definida pelo color;
+- Hexadecimal: **#FF0000** letras de **A** a **F** e números de **1** a **9**
+- Hexadecimal com transparência: **#FF00FF40** últimos dígitos indicam a transparência. 
+- RGB: **rgb(255,0,0)** valores de 0 a 255
+- RGBA: possuem opacidade(Transparência) **rgba(255,0,0,0.0)** valores de 0.0 até 1;
+- HSL(Hue, Saturation, Lightness):
+  - **Hue(Matiz)** - é o grau na roda de cores ( de 0 a 360)
+    - 0 ou 360 é vermelho
+    - 120 verde
+    - 240 azul
+  - **Saturation(Saturação)** - valor percentual
+    - 0% é preto
+    - 100% cor total
+  - **Lightness(luminosidade)** - luminosidade da cor
+    - 0% é preto
+    - 100% é branco
+- HSLA: Mesma extensão do HSL com transparência, valores de 0.0 até 1.
+
+# Propriedade background
+
+## Propriedade Object-fit
+
+Ajustar uma imagem ou um vídeo dentro de um elemento.
+
+- **object-fit**:fill (padrão)
+- **object-fit**: contain
+- **object-fit**: cover
+- **object-fit**: none
+- **object-fit**: scale-down
+
+## Propriedade Object-position
+
+- **object-position**: 50% 50% (padrão)
+- **object-position**: 30px 50px
+- **object-position**: left 50%
+- **object-position**: center
+- **object-position**: right
+- **object-position**: top
+- **object-position**: bottom
+
+## Alterando fundo de elementos
+
+- **backgroud-color**: cor
+- **background-image**: url('../images/...')
+- **background-image**: linear-gradient(cor inicio, cor final)
+- **background-image**: radial-gradient(cor do meio, cor das extremidades)
+- **background-image**: repeat
+- **background-size**: auto, cover, contain, valor(tamanho)
+
+## Repetição imagens de fundo 
+
+- **background-repeat**: repeat
+- **background-repeat**: repeat-x(repetir horizontalmente)
+- **backgorund-repeat**: repeat-y(repetir verticalmente)
+- **background-repeat**: space(repete nas duas direções x e y e adiciona um espaço em branco entre elas)
+- **background-repeat**: round(repete em todas as direções sem espaço em branco)
+- **background-repeat**: no-repeat(não repete a imagem)
+
+## Posicionamento das imagens de fundo
+
+- **background-position**: top
+- **background-position**: left
+- **background-position**: right
+- **background-position**: bottom
+- **background-position**: center
+
+## Propriedade background-attachment
+
+- **background-attachment**: fixed(imagem de fundo fica fixa na página)
+- **background-attachment**: scroll(imagem de fundo rola na página)
+- **background-attachment**: local(imagem de fundo rola junto com o conteúdo do elemento)
+
+## Propriedade background-origin
+
+- **background-origin**: padding-box(cobre o espaço do padding)
+- **background-origin**: border-box(cobre o espaço da borda)
+- **background-origin**: content-box(não cobre nenhum espaço do padding ou borda)
+
+## Propriedade background-clip
+
+Semelhante ao background-origin
+
+- **background-clip**: padding-box
+- **background-clip**: border-box
+- **background-clip**: content-box
+- **background-clip**: text
+
+## Mesclagem
+
+- **background-blend-mode**: normal
+- **background-blend-mode**: multiply
+- **background-blend-mode**: screen
+- **background-blend-mode**: overlay
+- **background-blend-mode**: darken
+- **background-blend-mode**: lighten
+- **background-blend-mode**: color-dodge
+- **background-blend-mode**: color-burn
+- **background-blend-mode**: hard-light
+- **background-blend-mode**: soft-light
+- **background-blend-mode**: difference
+- **background-blend-mode**: exclusion
+- **background-blend-mode**: hue
+- **background-blend-mode**: saturation
+- **background-blend-mode**: color
+- **background-blend-mode**: luminosity
+
+# Propriedade border
+
+- **border-top**
+- **border-right**
+- **border-bottom**
+- **border-left**
+
+## Tamanho da borda
+
+- **border-width**: Espessura da borda - thin, medium, thick, valores em pixels
+
+## Estilo da borda
+
+- **border-style**: solid, dashed, dotted, double, groove, ridge, inset, outset
+
+## Cor da borda
+
+- **border-color**: valor das cores
+
+## Arredondando os cantos das bordas
+
+- **border-radius**: valores em pixels ou porcertagem
+
+## Propriedade border image
+
+- **border-image-source**: caminho da imagem para aplicar na borda
+- **border-image-widht**: largura da imagem aplicada na borda
+- **border-image-repeat**: divide a imagem pra preencher a borda, valores repeat, stretch, round, space
+- **border-image-outset**: define a distância da borda em relação ao elemento
+- **border-image-slice**: fatia a imagem em sessões para aplicar na borda
+
+# Fontes
+
+## Famílias de fontes
+
+- **Tipos genéricos**, também conhecidos como **grupo de fontes**: 
+
+  - **Serif** - Compostas por pequenos traços e prolongamentos que ficam no fim de cada letra, conhecidos como serifas. Ex: Times New Roman e Georgia.
+  - **Sans-Serif** - Fontes que não possuem os traços e prolongamentos no fim das letras.
+  - **Display** - São consideradas tipografias comemorativas, ou enfeitadas.
+  - **Handwriting** - Fontes que se assemelham a escrita à mão, conhecidas como manuscritas ou cursivas.
+  - **Monospace** - As fontes mono-espaçadas são definidas por toda a família de fontes que todos os caracteres ocupam a mesma largura.
+
+  
+
+## Propriedades de fontes
+
+- **font-family**: fontes
+- **@font-face**: font-family: ; src: ;  (regra de fonte personalizada)
+- **font-weight**: normal, bold, bolder,  lighter (espessura da fonte) valores de 100 a 900
+- **font-size**: xx-small, x-small, small, medium, large, x-large, xx-large (altera o tamanho da fonte)
+- **font-style**: normal, italic, oblique
+- **font-variant**: Define se o texto será exibido em formato versalete(small caps) valores: normal, small-caps
+- **font-stretch**: Manipula o texto deixando mais expandido ou mais estreito
+  - valores: ultra-condensed, extra-condensed, semi-condensed, normal, semi-expanded, expanded, extra-expanded, ultra-expanded
+
+
+## Altura da linha line-height
+
+- **line-height**: normal, porcentagem(%), valor numérico
+
+## Propriedade font
+
+Aceita em uma única linha de código as propriedades:
+
+- **font-style**
+- **font-variant**
+- **font-weight**
+- **font-size/line-height**
+- **font-family**
+
+## Propriedade text-transform
+
+Define quais caracteres estarão em maiúsculo, minúsculo, etc.
+
+- **text-transfom**: initial/none, capitalize(primeiro caractere de cada palavra maiúsculo), uppercase(texto todo maiúsculo), lowercase(texto todo minúsculo)
+
+## Propriedade text-align
+
+Alinha o texto dentro do elemento.
+
+- **text-align**: left, right, center, justify
+
+## Propriedade text-decoration
+
+Adiciona ou remove linhas no texto, linhas em cima, no meio ou abaixo.
+
+- **text-decoration**: none, underline(sublinhado), line-trough(riscado), overline(linha acima do texto)
+- **text-decoration-line**: underline, overline, line-trough
+- **text-decoration-style**: solid, double, dotted, dashed, wavy
+- **text-decoration-color**: cor da linha
+- **text-decoration-thickness**: espessura da linha
+
+## Propriedade text-ident
+
+Define o recuo da primeira linha do nosso texto.
+
+- **text-ident**: valores positivos ou negativos
+
+## Propriedades letter-spacing e word-spacing
+
+**letter-spacing**: Adiciona um espaçamento entre cada **caractere** do texto, espaçamento entre as letras.
+
+**word-spacing**: Adiciona um espaçamento entre cada **palavra** do texto.
+
+## Propriedade white-space
+
+Define como os espaços em branco do texto de um determinado elemento é tratato.
+
+- **white-space**: normal(padrão)
+- **white-space**: nowrap(todo conteúdo fica em uma linha)
+- **white-space**: pre(mantém os espaçamentos inseridos no HTML)
+- **white-space**: pre-line(texto quebrado quando necessário e quando há quebra de linha no HTML)
+- **white-space**: pre-wrap(preserva os espaços em branco e o texto é quebrado quando necessário e quando há quebra de linha no HTML)
+- **white-space**: break-spaces(preserva os espaços em branco, o texto é quebrado quando necessário, quando há quebra de linha, mantém o texto dentro do contêiner)
+
+## Propriedade word-wrap
+
+Define, caso uma palavra seja muito grande para caber em uma linha, se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento.
+
+- **word-wrap**: normal, break-word
+
+## Propriedade word-break
+
+Define quando o texto deve ter uma quebra de linha.
+
+- **word-break**: normal
+- **word-break**: break-all
+- **word-break**: keep-all
+
+## Propriedade writing-mode
+
+Define a orientação do texto(vertical ou horizontal).
+
+- **writing-mode**: horizontal-tb
+- **writing-mode**: vertical-rl
+- **writing-mode**: vertical-lr
+
+## Propriedade text-overflow
+
+Define a orientação do texto(vertical ou horizontal).
+
+- **text-overflow**: clip(padrão)
+- **text-overflow**: ellipsis(adiciona 3 pontos)
+- **text-overflow**: string(coloca texto personalizado)
+
+## Efeito de sombra nos elementos
+
+- **box-shadow**: sombra horizontal, sombra vertical, desfoque, propagação da sombra, cor
+- **box-shadow**: inset(sombra na parte interna do elemento), valores
+- **filter**: drop-shadow(valores)
+
+## Efeito de sombra nos textos
+
+- **text-shadow**: sombra horizontal, sombra vertical, desfoque, cor
+
+## Transparência dos elementos
+
+Define o nível de opacidade de um elemento.
+
+- **opacity**: valores 0 a 1
+
+## Propriedade overflow
+
+Controla como o conteúdo deve ser exibido caso ultrapasse os limites do conteiner.
+
+- **overflow**: visible
+- **overflow**: hidden
+- **overflow**: scroll
+- **overflow**: auto
+- **overflow-x**:(corta o texto na horizontal)
+- **overflow-y**:(corta o texto na vertical)
+
+## Redefinindo as propriedades padrões dos navegadores
+
+Reset CSS é uma folha de estilos que irá sobrepor todas as propriedades de estilo CSS que os navegadores colocaram por padrão nos elementos, ajudando com que os sites tenham o mesmo design em todos os navegadores.
+
+- Arquivo #reset.css
+
+- *{
+
+  padding: 0;
+
+  margin: 0;
+
+  vertical-align: baseline;
+
+  list-style: none;
+
+  border: 0;
+
+    }
+
+## Unidades de medidas no CSS
+
+**Unidades de medidas absolutas**
+
+**Classificação de tipos numéricos de valores:**
+
+- <integer>: Valores inteiros, positivo e negativos (1024; -78)
+- <number>: Valores decimais (0.255; 128; -1.2)
+- <percentage>: Valores que representam uma fração de algum outro valor (50%)
+- <dimension>: Valores numéricos com unidade de medida atrelada
+  - <lenght> Representam distância (px; em; vw; in)
+  - <angle> Representam ângulos (deg; rad; grad; turn)
+  - <time> Expressam o tempo (s; ms)
+  - <resolutions> Descrevem resoluções para dispositivos (dpi; dpcm; dppx)
+
+**Unidade**                         **Nome**
+
+- cm                           Centímetro
+- mm                          Milímetro
+- Q                             Quarto de milímetro
+- in                             Polegadas
+- pc                            Paica
+- pt                             Pontos
+- px                            Pixels
+
+## Pixels físicos e lógicos
+
+**Densidade:** Quantidade de pixels que podem ser armazenados em determinada região da tela.
+
+**Pixel Físico:** São pixels reais que existem na tela do dispositivo.
+
+**Pixel Lógico:** Quanto conteúdo cabe na tela independente da densidade da tela.
+
+## Unidades de medidas relativas
+
+São calculadas com base em unidades já conhecidas de um **outro elemento**, o que faz com que o resultado possa **variar** de acordo com o valor da propriedade do elemento no qual estamos nos baseando.
+
+- **Porcentagem**: Unidade de medida que irá utilizar como referência o elemento pai para se basear, podendo alterar os resultados de acordo com o lugar que está inserido.
+- **em**: Utilizada para definir o tamanho da fonte de um elemento, vai utilizar como referência o valor da propriedade font-size do elemento pai no qual está inserido. Caso não seja utilizado a unidade em para outras propriedades que não sejam o tamanho da fonte do elemento, o resultado será em relação ao tamanho da fonte do próprio elemento em que está sendo definida a propriedade.
+- **rem**: O rem(root em) tem um funcionamento semelhante à unidade de medida em, porém a diferença é que, enquanto o em utiliza o elemento pai como referência, o rem está relacionado ao tamanho da fonte do elemento raíz, chamando root, que no caso é a tag <html>.
+
+## Vantagens de utilizar as unidade em e rem
+
+A utilização das unidade em e rem traz flexibilidade aos nosso projetos e a capacidade de dimensionar os elementos das nossas páginas web, resultando em designs:
+
+- **Fácil manutenção**
+- **Responsivos**
+- **Controle de escala pelos navegadores**
+
+## Configuração de fontes pelos navegadores
+
+O elemento raiz <html> herda o valor padrão do tamanho das fontes dos navegadores e esse tamanho pode ser configurado nas preferências dos browsers. Utilizando as unidades de medidas em e rem, facilmente o texto do nosso projeto pode ser escalado de acordo com as configurações que os usuários predefinam em seus navegadores.
+
+## Uso do rem
+
+Por que utilizar a unidade de medida rem?
+
+- **Tamanhos consistentes, sem herança**
+- **Melhor experiência do usuário**
+
+Por que utilizar a unidade de medida em?
+
+- **Contexto dos elementos**
+
+## Viewport
+
+É a área visível de uma página web, podendo variar de dispositivo para dispositivo. As unidades de medida viewport, vão ser calculadas em relação ao tamanho da área em que o usuário está vendo sua página.
+
+- **1vw = 1%** do tamanho da largura da área visível da página
+- **1vh = 1%** do tamanho da altura visível da página
+- **vmin**: calcula pelo menor valor entre largura x altura
+- **vmax**: calcula pelo maior valor entre largura x altura
+
+## Unidades relativas
+
+Existem duas unidades de medidas que não são tão comumente usadas que são:
+
+- **ex**: Irá usar o tamanho da altura do caractere x (em minúsculo) da fonte do elemento. O valor especificado altera quando a fonte for completamente alterada.
+- **ch**: O ch é uma unidade de medida que possui como referência o caractere 0 da fonte que está sendo utilizada no elemento. Caso a fonte do elemento seja uma fonte mono-espaçada, ao utilizar a unidade de medida ch, estamos definindo quantos caracteres devem caber no elemento.
+
+## Calculando valores com CSS
+
+- **Função calc**(cálculo)
+
+
+
